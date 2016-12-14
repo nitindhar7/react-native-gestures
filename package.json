@@ -2,9 +2,11 @@
   "name": "react-native-gestures",
   "version": "0.3.0",
   "description": "composable gesture system in react native",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "standard src/*.js && mocha --compilers js:babel/register --recursive --require should"
+    "test": "standard src/*.js && mocha --compilers js:babel/register --recursive --require should",
+    "start": "node_modules/.bin/babel src --out-dir dist",
+    "watch": "node_modules/.bin/babel src --out-dir dist --watch"
   },
   "repository": {
     "type": "git",
